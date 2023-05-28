@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Portfolio.css"/>
+    <link rel="icon" href="img/icon.png"/>
+    <title>Portfolio - Victor BERNARD</title>
+    <!-- Charger la bibliothèque jsPDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav class = "Accueil"><a href="Accueil.html"><img src ="img/Accueil.png"/> </a></nav> 
+        <nav class = "menu1"><a href ="Java.html">        Java        </a></nav> 
+        <nav class = "menu2"><a href ="IHM.html">        IHM       </a></nav> 
+        <nav class = "menu3"><a href ="Web.html">        Web       </a></nav> 
+       
+        <!-- Ajouter un bouton "Générer en PDF" -->
+        <div class="pdf-button"> <a href="retex/retour d'experience Web Victor BERNARD.pdf" download>Générer le PDF</a></div>
+    </header>
+
+    
+    <section class = "exp">
+        <span class = "exp1">
+            <div class = "Biosphereimg2">
+                <img src ="img/SiteWeb1.png"/>
+            </div>
+            <div>
+                <p>Compétences développées : </p> 
+                <ul>
+                    <li>Amélioration sur les langages HTML et CSS</li>
+                    <li>Création d'un site en fonction d'une cible principale (persona) </li>
+                    <li>Travail d'équipe et utilisation de Gitlab </li>
+                </ul>       
+                          
+                    
+                
+            </div>
+        </span>
+
+        <span class ="exp2">
+            <div>
+                <p>Ce projet avait pour but de créer par binôme un site Web contenant les informations relatives à l'analyse PESTEL de l'ESN Atos, analyse que nous avions faite antérieurement en cours de gestion. Afin de réaliser ce site nous avons élaboré une maquette et une fiche persona qui avait pour objectif de bien cibler le comportement de notre futur site
+                </p>
+            </div>
+            <div class = "Biosphereimg2">
+                <img src ="img/SiteWeb2.png"/>
+            </div>
+        </span>
+    </section>
+
+
+
+
+
+
+    <footer>
+
+        <div class = "contact"> 
+            <p>Victor Bernard </p>
+            <p>Tel : 06 47 30 58 60 </p> 
+            <p>Mail : victorbernard333@gmail.com</p>
+        </div>
+        <div class = "imageFooter"> <img src="img/logoLinkedin.png"/>  </div>
+
+
+    </footer>
+
+    <script>
+        function generatePDF() {
+            const body = document.body;
+            const doc = new jsPDF();
+            doc.html(body, {
+                callback: function (pdf) {
+                    const link = document.querySelector('.pdf-link');
+                    link.href = pdf.output('bloburl');
+                    link.click();
+                }
+            });
+        }
+    </script>

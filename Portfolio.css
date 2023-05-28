@@ -1,0 +1,583 @@
+body{
+    background-image: url(img/fondMarron.jpeg);
+    background-size: cover;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+}
+
+html,body { height : 100%; }
+
+header{
+
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    height: 8%;
+    float: left; 
+    background-color: rgb(71, 122, 105);
+
+
+}
+.Accueil:hover{
+    transition: background-color 0.2s ease-in-out;
+    background-color: rgba(255, 228, 196, 0.979) ;
+}
+
+.Accueil{
+    background-color: rgb(126, 139, 83);
+    border-style: solid;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    width: 10%;
+}
+
+.Accueil img{
+    height: 100%;
+    width: 110%;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.menu1:hover{
+    transition: background-color 0.2s ease-in-out;
+    background-color: rgba(255, 228, 196, 0.979) ;
+}
+
+
+.menu1{
+    border-style: solid;
+    border-left-width : 0;
+    flex-basis: 30%;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu1 a{
+    color: black;
+    font-weight: bold;
+    height: 50%;
+    font-size: 150%;
+
+}
+
+.menu2:hover{
+    transition: background-color 0.2s ease-in-out;
+    background-color: rgba(255, 228, 196, 0.979) ;
+}
+
+.menu2{
+    border-style: solid;
+    border-left-width : 0;
+    flex-basis: 30%;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu2 a{
+    color: black;
+    font-weight: bold;
+    height: 50%;
+    font-size: 150%;
+}
+
+.menu3:hover{
+    transition: background-color 0.2s ease-in-out;
+    background-color: rgba(255, 228, 196, 0.979) ;
+}
+
+.menu3{
+    border-style: solid;
+    border-left-width : 0;
+    flex-basis: 30%;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu3 a{
+    color: black;
+    font-weight: bold;
+    height: 50%;
+    font-size: 150%;
+}
+
+.photo img{
+    width: 85%;
+}
+
+footer{
+
+position: fixed;
+width: 100%; height: 13%;
+bottom: 0; left: 0; right: 0;
+
+background-color: rgb(126, 139, 83);
+display: flex ;
+}
+
+footer p{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding-left: 2px;
+}
+
+.imageFooter{
+
+   /* border-style: solid; border-color: rgb(226, 43, 195);*/
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    flex-basis: 15% ;
+}
+
+.imageFooter img{
+    padding-top: 3px;
+    padding-right: 3px;
+    width: 42%;
+    height: 95%;
+    justify-content: flex-end;
+}
+
+#Accueil{
+    width: 60%;
+    justify-content: flex-end;
+}
+
+.contact{
+    justify-content: flex-start ;
+    color: rgb(255, 255, 255);
+   /* border-style: solid; border-color: blueviolet;*/
+    flex-basis: 85%;
+}
+
+.Projet{ 
+    MARGIN-top: 6%;
+    background-color: rgb(165, 140, 56);
+
+    height: 55%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Projet img{
+    border-style: solid;
+}
+
+.photo{
+    width: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texte{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texte p{
+    font-size: 180%;
+    font-weight: bold;
+}
+
+.projet1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projet2 img{
+    width: 90%;
+}
+
+.projet1 a{
+    font-size: 200%;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projet1 nav{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.projet2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projet2 img{
+    width: 83%;
+}
+
+.projet2 a{
+    font-size: 200%;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projet2 nav{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.exp{
+    margin-top: 8px;
+    height: 75%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.exp img{
+    border-style: solid;
+    width: 80%;
+}
+
+.ProjetIHM img {
+    height: 65%;
+    width: 65%;
+    margin-top: 3%;
+    border-style: solid;
+}
+
+.ProjetIHM{
+    MARGIN-top: 6%;
+    background-color: rgb(165, 140, 56);
+
+    height: 55%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.exp1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 40%;
+ 
+}
+
+.exp2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+    
+}
+
+
+
+
+.exp1 p{
+    width: 100%;
+}
+
+
+.exp2 p{
+    width: 100%;
+    
+}
+
+.exp p{
+    font-size: larger;
+    
+}
+
+.exp ul{
+    font-size: larger;
+    width:  100%; 
+}
+
+.pdf-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: gray;
+    padding: 10px;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 5px; /* ajouter des bords arrondis */
+    margin: 10px; /* ajouter une marge pour éloigner du coin */
+  }
+  
+  .pdf-button:hover {
+    background-color: darkgray;
+  }
+  
+  .pdf-button a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  
+.Biosphereimg1{
+    width: 80%;
+}
+
+.Biosphereimg2{
+    width: 120%;
+}
+
+
+
+@media screen and (max-width: 1800px){
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 80%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.texte {
+    font-size: medium;
+    width: 60%;
+}
+
+nav{
+    font-size: medium;
+}
+
+footer p{
+    width: 33%;
+    font-size: 120%;
+}
+
+footer{
+    height: 10%;
+    justify-content: space-between;
+}
+.imageFooter img{
+    width: 30%;
+}
+
+header nav a{
+    font-size: 80%;
+}
+
+.menu1 a{
+    font-size: 100%;
+    }
+    
+.menu2 a{
+    font-size: 100%;
+    }
+
+.menu3 a{
+    font-size: 100%;
+}
+
+.projet1 img{
+    width: 60%;
+}
+
+.projet2 img{
+    width: 60%;
+}
+
+.exp p{
+    font-size: large; 
+}
+
+.exp ul{
+    font-size: medium;
+}
+
+.ProjetIHM img {
+    height: 40%;
+    width: 40%;
+}
+
+
+
+@media screen and (max-width: 800px){
+
+.Projet{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    align-items: center;
+    justify-content:space-around;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.ProjetIHM{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    align-items: center;
+    justify-content:center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.ProjetIHM img {
+    height: 120%;
+    width: 120%;
+}
+
+
+.pdf-button{
+   margin-top: 15%;
+}
+
+.menu1{
+    width: 20%;
+}
+
+.Projet p{
+    font-size:80%;
+}
+
+.Projet img{
+    border-style: solid;
+    width: 120%;
+}
+*
+.photo img{
+    width: 70%;
+}
+
+header{
+
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 6%;
+}
+
+.texte{
+    width: 90%;
+    font-size: large;
+}
+
+.photo{
+    width: 60%;
+}
+
+
+
+footer{
+    height: 6%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p{
+    font-size: 80%;
+}
+
+.imageFooter img{
+    width: 70%;
+    height: 85%;
+    padding-bottom: 4px;
+}
+
+.projet1{
+    width: 50%;
+}
+.projet1 a{
+    font-size: medium;
+}
+
+.projet2{
+    width: 50%;
+}
+
+.projet2 a{
+    font-size: medium;
+}
+
+.exp{
+    margin-top: 11%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.exp1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.exp img{
+    width:100%
+}
+
+.exp p{
+    font-size: small;
+}
+
+.exp ul{
+    width: 90%;
+    font-size: small;
+}
+
+
+.exp2{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+}
+
+
+
+footer p{
+    width: 20%;
+
+}
+
+.imageFooter img{
+    width: 50%;
+}
+
+footer p:nth-child(0n+3){
+    width: 50%;
+
+}
+
+.texteIHM li{
+    font-size: 60%;
+}
+
+.texteIHM p{
+    font-size: 60%;
+
+}
+}}

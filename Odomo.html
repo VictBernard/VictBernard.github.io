@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Portfolio.css"/>
+    <link rel="icon" href="img/icon.png"/>
+    <title>Portfolio - Victor BERNARD</title>
+    <!-- Charger la bibliothèque jsPDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav class = "Accueil"><a href="Accueil.html"><img src ="img/Accueil.png"/> </a></nav> 
+        <nav class = "menu1"><a href ="Java.html">        Java        </a></nav> 
+        <nav class = "menu2"><a href ="IHM.html">        IHM       </a></nav> 
+        <nav class = "menu3"><a href ="Web.html">        Web       </a></nav> 
+       
+        <!-- Ajouter un bouton "Générer en PDF" -->
+        <div class="pdf-button"> <a href="retex/retour d'experience Odomo Victor BERNARD.pdf" download>Générer le PDF</a></div>
+    </header>
+
+    
+    <section class = "exp">
+        <span class = "exp1">
+            <div>
+                <img src ="img/Odomo.png"/>
+            </div>
+            <div>
+                <p>Compétences développées : </p> 
+                <ul>
+                    <li>Maniement des Tableaux  </li>
+                    <li>Progression sur les algorithme contenant des boucles  </li>
+                    <li>Utilisation de l'IDE Netbeans  </li>
+                </ul>       
+                          
+                    
+                
+            </div>
+        </span>
+
+        <span class ="exp2">
+            <div>
+                <p>L'objectif du projet Odomo était de développer une station météorologique personnelle, en le décomposant en trois parties distinctes : MÉTÉO, CHAUFFAGE et JARDIN. J'ai pu y contribuer en implémentant des matrices pour afficher les données relatives à la pluviométrie et au mode de chauffage.
+                </p>
+            </div>
+            <div>
+                <img src ="img/Odomo2.png"/>
+            </div>
+        </span>
+    </section>
+
+
+
+
+
+
+    <footer>
+
+        <div class = "contact"> 
+            <p>Victor Bernard </p>
+            <p>Tel : 06 47 30 58 60 </p> 
+            <p>Mail : victorbernard333@gmail.com</p>
+        </div>
+        <div class = "imageFooter"> <img src="img/logoLinkedin.png"/>  </div>
+
+
+    </footer>
+
+    <script>
+        function generatePDF() {
+            const body = document.body;
+            const doc = new jsPDF();
+            doc.html(body, {
+                callback: function (pdf) {
+                    const link = document.querySelector('.pdf-link');
+                    link.href = pdf.output('bloburl');
+                    link.click();
+                }
+            });
+        }
+    </script>
