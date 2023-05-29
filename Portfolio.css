@@ -23,6 +23,7 @@ header{
 .Accueil:hover{
     transition: background-color 0.2s ease-in-out;
     background-color: rgba(255, 228, 196, 0.979) ;
+    cursor: pointer;
 }
 
 .Accueil{
@@ -32,6 +33,7 @@ header{
     justify-content: space-around;
     align-content: space-around;
     width: 10%;
+
 }
 
 .Accueil img{
@@ -46,6 +48,7 @@ nav a{
 .menu1:hover{
     transition: background-color 0.2s ease-in-out;
     background-color: rgba(255, 228, 196, 0.979) ;
+    cursor: pointer;
 }
 
 
@@ -69,6 +72,7 @@ nav a{
 .menu2:hover{
     transition: background-color 0.2s ease-in-out;
     background-color: rgba(255, 228, 196, 0.979) ;
+    cursor: pointer;
 }
 
 .menu2{
@@ -90,6 +94,7 @@ nav a{
 .menu3:hover{
     transition: background-color 0.2s ease-in-out;
     background-color: rgba(255, 228, 196, 0.979) ;
+    cursor: pointer;
 }
 
 .menu3{
