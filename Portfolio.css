@@ -133,22 +133,15 @@ footer p{
     padding-left: 2px;
 }
 
-.imageFooter{
-
-   /* border-style: solid; border-color: rgb(226, 43, 195);*/
-    display: flex;
-    justify-content: flex-end;
-    align-content: flex-end;
-    flex-basis: 15% ;
-}
-
-.imageFooter img{
-    padding-top: 3px;
-    padding-right: 3px;
-    width: 42%;
-    height: 95%;
-    justify-content: flex-end;
-}
+.imageFooter {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .imageFooter img {
+    width: 80px; 
+  }
 
 #Accueil{
     width: 60%;
@@ -375,6 +368,10 @@ footer p{
     justify-content: space-around;
 }
 
+.imageFooter img {
+    width: 60px; 
+  }
+
 .texte {
     font-size: medium;
     width: 60%;
@@ -392,9 +389,6 @@ footer p{
 footer{
     height: 10%;
     justify-content: space-between;
-}
-.imageFooter a{
-    width: 75%;
 }
 
 header nav a{
@@ -525,7 +519,6 @@ header{
 footer{
     height: 6%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -533,11 +526,6 @@ footer p{
     font-size: 80%;
 }
 
-.imageFooter a{
-    width: 70%;
-    height: 85%;
-    padding-bottom: 4px;
-}
 
 .projet1{
     width: 50%;
@@ -583,10 +571,6 @@ footer p{
 
 }
 
-.imageFooter a{
-    width: 50%;
-}
-
 footer p:nth-child(0n+3){
     width: 50%;
 
@@ -600,4 +584,8 @@ footer p:nth-child(0n+3){
 font-size: 10px;
 
 }
+
+.imageFooter img {
+    width: 40px; 
+  }
 }}
