@@ -157,6 +157,11 @@ footer p{
     flex-basis: 85%;
 }
 
+.contact a{
+    text-decoration: none;
+    color: black;
+}
+
 .Projet{ 
     MARGIN-top: 6%;
     background-color: rgb(165, 140, 56);
