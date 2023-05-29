@@ -349,6 +349,10 @@ footer p{
     width: 120%;
 }
 
+.hyperstellarimg2{
+    width: 80%;
+}
+
 
 
 @media screen and (max-width: 1800px){
@@ -415,6 +419,7 @@ header nav a{
     font-size: medium;
 }
 
+
 .ProjetIHM img {
     height: 40%;
     width: 40%;
@@ -427,21 +432,29 @@ header nav a{
 .Projet{
     display: flex;
     flex-direction: column;
-    height: 70%;
+    height: 80%;
     align-items: center;
     justify-content:space-around;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.projet1 img{
+    width: 80%;
+}
+
+.projet2 img{
+    width: 80%;
 }
 
 .ProjetIHM{
     display: flex;
     flex-direction: column;
-    height: 70%;
+    height: 80%;
     align-items: center;
     justify-content:center;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .ProjetIHM img {
@@ -464,7 +477,7 @@ header nav a{
 
 .Projet img{
     border-style: solid;
-    width: 120%;
+    width: 100%;
 }
 *
 .photo img{
@@ -489,11 +502,20 @@ header{
     width: 60%;
 }
 
+.hyperstellarimg2{
+    width: 100%;
+}
+
+.Biosphereimg1{
+    width: 100%;
+}
+
 
 
 footer{
     height: 6%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -525,36 +547,24 @@ footer p{
 .exp{
     margin-top: 11%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 
-.exp1{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
 
 .exp img{
-    width:100%
+    width:90%
 }
 
 .exp p{
-    font-size: small;
+    font-size: 20px;
 }
 
 .exp ul{
     width: 90%;
-    font-size: small;
+    font-size: 20px;
 }
 
-
-.exp2{
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-around;
-}
 
 
 
@@ -573,11 +583,11 @@ footer p:nth-child(0n+3){
 }
 
 .texteIHM li{
-    font-size: 60%;
+    font-size: 15px;
 }
 
 .texteIHM p{
-    font-size: 60%;
+    font-size: 15px;
 
 }
 }}
