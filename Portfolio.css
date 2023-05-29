@@ -427,7 +427,7 @@ header nav a{
 
 
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1000px){
 
 .Projet{
     display: flex;
@@ -557,12 +557,12 @@ footer p{
 }
 
 .exp p{
-    font-size: 20px;
+    font-size: 13px;
 }
 
 .exp ul{
     width: 90%;
-    font-size: 20px;
+    font-size: 13px;
 }
 
 
@@ -583,11 +583,11 @@ footer p:nth-child(0n+3){
 }
 
 .texteIHM li{
-    font-size: 15px;
+    font-size: 10px;
 }
 
 .texteIHM p{
-    font-size: 15px;
+font-size: 10px;
 
 }
 }}
