@@ -152,7 +152,7 @@ footer p{
     justify-content: flex-start ;
     color: rgb(255, 255, 255);
    /* border-style: solid; border-color: blueviolet;*/
-    flex-basis: 85%;
+    flex-basis: 90%;
 }
 
 .contact a{
@@ -368,9 +368,9 @@ footer p{
 .contact{
     display: flex;
     flex-direction: row;
-    flex-basis: 80%;
+    flex-basis: 90%;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 .imageFooter img {
@@ -578,7 +578,7 @@ footer p{
 
 footer p:nth-child(0n+3){
     width: 50%;
-    font-size: 65%;
+    font-size: 70%;
 
 }
 
