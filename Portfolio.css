@@ -577,7 +577,7 @@ footer p{
 
 
 footer p:nth-child(0n+3){
-    width: 55%;
+    width: 53%;
     font-size: 70%;
     border-style: solid;
 
