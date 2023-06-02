@@ -577,13 +577,14 @@ footer p{
 
 
 footer p:nth-child(0n+3){
-    width: 50%;
+    width: 55%;
     font-size: 70%;
+    border-style: solid;
 
 }
 
 footer p:nth-child(0n+2){
-    width: 30%;
+    width: 28%;
     font-size: 75%;
 }
 
