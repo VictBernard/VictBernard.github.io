@@ -578,18 +578,18 @@ footer p{
 
 footer p:nth-child(0n+3){
     width: 53%;
-    font-size: 72%;
+    font-size: 74%;
 
 }
 
 footer p:nth-child(0n+2){
     width: 28%;
-    font-size: 72%;
+    font-size: 74%;
 }
 
 footer p:nth-child(0n+1){
     width: 15%;
-    font-size: 72%;
+    font-size: 74%;
 
 }
 
