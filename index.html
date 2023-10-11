@@ -11,22 +11,22 @@
 <body>
 
     <header>
-        <nav class="Accueil" onclick="window.location.href='index.html'">
+        <nav class="Accueil" id = "Home" onclick="window.location.href='index.html'">
             <a href="index.html"><img src="img/Accueil.png"/></a>
           </nav>
           
-          <nav class="menu1" onclick="window.location.href='Java.html'">
+          <nav class="menu1" id="menu1" onclick="window.location.href='Java.html'">
             <a href="Java.html">Java</a>
           </nav>
           
-          <nav class="menu2" onclick="window.location.href='IHM.html'">
+          <nav class="menu2" id="menu2" onclick="window.location.href='IHM.html'">
             <a href="IHM.html">IHM</a>
           </nav>
           
-          <nav class="menu3" onclick="window.location.href='Web.html'">
+          <nav class="menu3" id="menu3" onclick="window.location.href='Web.html'">
             <a href="Web.html"><span translate="no" > Web</span></a>
           </nav>
-          <nav class="menu3" onclick="window.location.href='Reseau.html'">
+          <nav class="menu3" id="menu4" onclick="window.location.href='Reseau.html'">
             <a href="Reseau.html">Reseau</a>
           </nav> 
     </header>
@@ -56,5 +56,31 @@
 
 
     </footer>
+    <script>
+      // Obtenez le nom de la page courante
+      var currentPageName = window.location.pathname.split('/').pop();
+
+      // Vérifiez le nom de la page et ajoutez la classe "yellow-element" si nécessaire
+      if (currentPageName === 'index.html') {
+          var elementToHighlight = document.getElementById('Home');
+          elementToHighlight.classList.add('yellow-button');
+      }
+      if (currentPageName === 'Java.html') {
+          var elementToHighlight = document.getElementById('menu1');
+          elementToHighlight.classList.add('yellow-button');
+      }
+      if (currentPageName === 'IHM.html') {
+          var elementToHighlight = document.getElementById('menu2');
+          elementToHighlight.classList.add('yellow-button');
+      }
+      if (currentPageName === 'Web.html') {
+          var elementToHighlight = document.getElementById('menu3');
+          elementToHighlight.classList.add('yellow-button');
+      }
+      if (currentPageName === 'Reseau.html') {
+          var elementToHighlight = document.getElementById('menu4');
+          elementToHighlight.classList.add('yellow-button');
+      }
+  </script>
 </body>
 </html>
