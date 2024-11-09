@@ -1,0 +1,11 @@
+.logo a img {
+    width: 40px;        /* Taille réduite du logo */
+    height: 40px;       /* Taille réduite du logo */
+    border-radius: 5px; /* Bord arrondi pour une meilleure apparence */
+    transition: transform 0.3s ease; /* Effet de transition */
+  }
+  
+  .logo a:hover img {
+    transform: scale(1.1); /* L'icône LinkedIn s'agrandit légèrement au survol */
+  }
+

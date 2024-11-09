@@ -1,0 +1,89 @@
+/* Global styles */
+.accueil-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;  /* Fond noir moins foncé */
+    padding-top: 100px;
+  }
+  
+  .accueil-card {
+    width: 100%;
+    max-width: 600px;  /* Taille de la carte */
+    background-color: #333; /* Fond de carte légèrement plus clair */
+    color: #fff;  /* Texte en blanc */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Photo */
+  .photo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -70px; /* Décale l'image pour la faire sortir de la carte */
+  }
+  
+  .photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #f5b800;  /* Bordure jaune autour de l'image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Nom et prénom */
+  .name-container {
+    text-align: center;
+    margin-top: 20px; /* Espace entre la photo et le nom */
+  }
+  
+  .name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f5b800;  /* Jaune pour le nom */
+    margin: 0;
+  }
+  
+  /* Présentation */
+  .presentation {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .presentation h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #f5b800;  /* Titre en jaune */
+  }
+  
+  .presentation p {
+    font-size: 1.1rem;
+    color: #fff;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+  
+  /* Lien vers le CV */
+  .cv-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .cv-link a {
+    color: #f5b800;  /* Lien en jaune */
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-decoration: none;
+  }
+  
+  .cv-link a:hover {
+    text-decoration: underline;
+  }
+  

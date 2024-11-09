@@ -1,0 +1,8 @@
+{
+  "routes": [
+    "/",
+    "/carriere",
+    "/contact",
+    "/projets"
+  ]
+}

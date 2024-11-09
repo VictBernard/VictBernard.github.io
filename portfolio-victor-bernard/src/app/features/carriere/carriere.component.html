@@ -1,0 +1,61 @@
+<div class="carriere-container">  
+    
+    <mat-card class="carriere-intro-card">
+        <mat-card-header class="header">
+          <mat-card-title class="title">Diplômes</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <ul class="diploma-list">
+            <li class="diploma-item">
+              <mat-icon class="icon">school</mat-icon>
+              <strong>BAC STI2D</strong>‎  - Lycée Kastler, Talence (2019 - 2022)
+            </li>
+            <li class="diploma-item">
+              <mat-icon class="icon">school</mat-icon>
+              <strong>BUT Informatique</strong>‎  - IUT de Bordeaux, Gradignan (2022 - 2025)
+            </li>
+          </ul>
+        </mat-card-content>
+      </mat-card> 
+      
+      
+  
+    <!-- Liste des emplois avec défilement -->
+    <div class="emploi-list">
+      <mat-card *ngFor="let emploi of emplois" class="emploi-card">
+  
+        <!-- Photo de l'entreprise -->
+        <div class="photo-container">
+          <img [src]="emploi.photo" alt="{{ emploi.nom }}" class="photo" />
+          <div class="photo-overlay">
+            <div class="photo-description">
+              <p>{{ emploi.description }}</p>
+              <a mat-button href="{{ emploi.rapport }}" target="_blank">Voir le rapport</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Titre et description -->
+        <mat-card-header>
+          <mat-card-title class="emploi-title">{{ emploi.nom }}</mat-card-title>
+        </mat-card-header>
+  
+        <mat-card-content class="emploi-description">
+          <p>{{ emploi.descriptionCourte }} -  {{emploi.dates}}</p>
+  
+          <div class="competences">
+            <strong>Compétences utilisées:</strong>
+            <div class="competences-container">
+              <a *ngFor="let competence of emploi.competences"
+                 [href]="'https://fr.wikipedia.org/wiki/' + competence"
+                 target="_blank"
+                 class="badge">
+                {{ competence }}
+              </a>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  

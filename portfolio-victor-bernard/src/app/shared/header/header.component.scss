@@ -1,0 +1,48 @@
+/* Reset and basic setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Header styling */
+  .custom-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 8px 30px;  /* Réduire l'espace vertical */
+    width: 100%;        /* Prendre toute la largeur de l'écran */
+    height: 50px;       /* Réduire la hauteur du header */
+  }
+  
+  .navigation ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navigation ul li {
+    margin-right: 20px; /* Espacement entre les éléments du menu */
+  }
+
+  .navigation a.active {
+    font-weight: bold; /* Facultatif, pour accentuer le lien actif */
+  }
+
+  .navigation ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px; /* Réduire la taille du texte */
+    transition: color 0.3s ease;
+  }
+  
+  .navigation ul li a:hover {
+    color: #f5a623;
+  }
+  
+  /* User menu */
+  .user-menu {
+    position: relative;
+  }
+  

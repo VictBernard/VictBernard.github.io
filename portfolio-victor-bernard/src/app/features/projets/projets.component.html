@@ -1,0 +1,56 @@
+<div class="projets-container">
+  <!-- Section des filtres -->
+  <div class="filtres">
+    <button *ngFor="let filtre of filtres" 
+            (click)="appliquerFiltre(filtre)" 
+            [ngStyle]="{ 'background-color': getCategoryColor(filtre) }"
+            [class.selected]="categorieFiltree === filtre">
+      {{ filtre }}
+    </button>
+  </div>
+
+  <!-- Liste des projets avec défilement -->
+  <div class="projet-list">
+    <mat-card *ngFor="let projet of getProjetsFiltres()" class="projet-card">
+      <!-- Affichage de la catégorie dans un carré coloré -->
+      <div class="categorie-container" [ngStyle]="{ 'background-color': getCategoryColor(projet.categorie) }">
+        <span class="categorie-text">{{ projet.categorie }}</span>
+      </div>
+
+      <!-- Photo du projet -->
+      <div class="photo-container">
+        <img [src]="projet.photo" alt="{{ projet.nom }}" class="photo" />
+        <div class="photo-overlay">
+          <div class="photo-description">
+            <p>{{ projet.description }}</p>
+            <a mat-button href="{{ projet.pdf }}" target="_blank">Télécharger le PDF</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Titre et description -->
+      <mat-card-header>
+        <mat-card-title class="projet-title">{{ projet.nom }}</mat-card-title>
+      </mat-card-header>
+
+      <mat-card-content class="projet-description">
+        <p>{{ projet.descriptionCourte }}</p>
+
+        <div class="competences">
+          <strong>Compétences utilisées:</strong>
+          <div class="competences-container">
+            <a *ngFor="let competence of projet.competences" 
+               [href]="'https://fr.wikipedia.org/wiki/' + competence" 
+               target="_blank" 
+               class="badge">
+              {{ competence }}
+            </a>
+          </div>
+        </div>
+        
+        
+        
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

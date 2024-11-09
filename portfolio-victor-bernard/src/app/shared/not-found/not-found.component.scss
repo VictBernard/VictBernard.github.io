@@ -1,0 +1,76 @@
+/* Global styles for NotFoundComponent */
+.not-found-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;  /* Dark background */
+    padding-top: 100px;
+  }
+  
+  .not-found-card {
+    width: 100%;
+    max-width: 600px;  /* Card size */
+    background-color: #333; /* Card background slightly lighter */
+    color: #fff;  /* Text color white */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Error code */
+  .error-code-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;  /* Adjust spacing */
+  }
+  
+  .error-code {
+    font-size: 150px;
+    font-weight: bold;
+    color: #f5b800;  /* Yellow color */
+    font-family: 'Roboto', sans-serif;  /* Or choose a fancy font like 'Arial Black' */
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Error message */
+  .error-message {
+    text-align: center;
+    margin-top: 20px; /* Space between error code and text */
+  }
+  
+  .error-message h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #f5b800;  /* Title in yellow */
+  }
+  
+  .error-message p {
+    font-size: 1.1rem;
+    color: #fff;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+  
+  /* Back to home link */
+  .back-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .back-button {
+    color: #f5b800;  /* Button color yellow */
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-decoration: none;
+  }
+  
+  .back-button:hover {
+    text-decoration: underline;
+  }
+  
